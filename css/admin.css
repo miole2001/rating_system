@@ -1,0 +1,186 @@
+/* Import Google font - Poppins */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+.sidebar {
+  position: fixed;
+  height: 100%;
+  width: 260px;
+  background: #00214D;
+  padding: 15px;
+  z-index: 99;
+}
+.logo {
+  font-size: 25px;
+  padding: 0 15px;
+}
+.sidebar a {
+  color: #fff;
+  text-decoration: none;
+}
+.menu-content {
+  position: relative;
+  height: 100%;
+  width: 100%;
+  margin-top: 40px;
+  overflow-y: scroll;
+}
+.menu-content::-webkit-scrollbar {
+  display: none;
+}
+.menu-items {
+  height: 100%;
+  width: 100%;
+  list-style: none;
+  transition: all 0.4s ease;
+}
+.submenu-active .menu-items {
+  transform: translateX(-56%);
+}
+.menu-title {
+  color: #fff;
+  font-size: 14px;
+  padding: 15px 20px;
+}
+.item a,
+.submenu-item {
+  padding: 16px;
+  display: inline-block;
+  width: 100%;
+  border-radius: 12px;
+}
+.item i {
+  font-size: 12px;
+}
+.item a:hover,
+.submenu-item:hover,
+.submenu .menu-title:hover {
+  background: rgba(255, 255, 255, 0.1);
+}
+.submenu-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: #fff;
+  cursor: pointer;
+}
+.submenu {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  right: calc(-100% - 26px);
+  height: calc(100% + 100vh);
+  background: #00214D;
+  display: none;
+}
+.show-submenu ~ .submenu {
+  display: block;
+}
+.submenu .menu-title {
+  border-radius: 12px;
+  cursor: pointer;
+}
+.submenu .menu-title i {
+  margin-right: 10px;
+}
+.navbar,
+.main {
+  left: 260px;
+  width: calc(100% - 260px);
+  transition: all 0.5s ease;
+  z-index: 1000;
+}
+.sidebar.close ~ .navbar,
+.sidebar.close ~ .main {
+  left: 0;
+  width: 100%;
+}
+.navbar {
+  position: fixed;
+  color: #fff;
+  padding: 15px 20px;
+  font-size: 25px;
+  background: #00214D;
+  cursor: pointer;
+}
+.navbar #sidebar-close {
+  cursor: pointer;
+}
+.main {
+  position: relative;
+  height: 100vh;
+  z-index: 100;
+  background: #e7f2fd;
+  top: 50px;
+}
+
+/* Additional CSS for icons in sidebar */
+.item a {
+  display: flex;
+  align-items: center;
+}
+
+.item i {
+  margin-right: 10px;
+  font-size: 18px;
+}
+
+.submenu-item i {
+  font-size: 14px;
+}
+
+
+/*form design*/
+
+/* .account-form {
+  width: 100%;
+  max-width: 500px;
+  background: #4070f4;
+  box-shadow: 0 .5rem 1rem rgba(0,0,0,.1);
+  border-radius: .5rem;
+  padding: 2rem;
+  margin: 1rem;
+  
+}
+
+.account-form form {
+  display: flex;
+  flex-direction: column;
+}
+
+.account-form form h3 {
+  text-align: center;
+  margin-bottom: 1rem;
+}
+
+.account-form form .box {
+  margin-bottom: 1rem;
+  padding: 1rem;
+  border-radius: .5rem;
+  border: .1rem solid rgba(0,0,0,.2);
+  font-size: 18px;
+}
+
+.btn {
+  padding: 15px 0 15px 0;
+  background-color: #16a085;
+  color: #fff;
+  border: none;
+  border-radius: 14px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+.btn:hover {
+  background-color: #1a3d32;
+} */
+
+
+
+
+
